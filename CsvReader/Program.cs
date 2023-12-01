@@ -1,4 +1,6 @@
-﻿namespace CsvReader
+﻿using System.Reflection;
+
+namespace CsvReader
 {
     internal class Program
     {
@@ -14,7 +16,7 @@
 
         static void Main(string[] args)
         {
-            var csvPath = @"C:\Users\Jooow\Downloads\car_orders.csv";
+            var csvPath = Resource1.car_orders;
 
             string[] csvlines = System.IO.File.ReadAllLines(csvPath);
 
